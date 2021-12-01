@@ -1,5 +1,20 @@
 import algoliasearch from 'algoliasearch';
 import data from '../../data/products.json';
 
-console.log(data);
-// const client = algoliasearch('VYLEWMPKEZ', '8940a18fde155adf3f74b0912c267aa4');
+class PushData {
+  constructor() {
+    this.pushData();
+  }
+
+  pushData() {
+    // Create an instance
+    const client = algoliasearch(
+      'EZRFFAAMJ2',
+      'e4a746809c0c9401c32a527141fd3d79'
+    );
+    const index = client.initIndex('client_Spence_Williams');
+    index.addObjects(data);
+  }
+}
+
+export default PushData;

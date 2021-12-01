@@ -1,13 +1,19 @@
 import Autocomplete from './components/autocomplete';
+import PushData from './components/pushdata';
 
 class SpencerAndWilliamsSearch {
   constructor() {
     this._initSearch();
     this._registerEvents();
+    this._pushData();
   }
 
   _initSearch() {
     this.autocompleteDropdown = new Autocomplete();
+  }
+
+  _pushData() {
+    this.PushDataToAlgolia = new PushData();
   }
 
   _registerEvents() {
@@ -23,5 +29,8 @@ class SpencerAndWilliamsSearch {
     });
   }
 }
+
+// const test = new SpencerAndWilliamsSearch();
+// console.log(test._pushData());
 
 const app = new SpencerAndWilliamsSearch();
