@@ -2,6 +2,10 @@ import algoliasearch from 'algoliasearch';
 import data from '../../data/products.json';
 
 class PushData {
+  /** ***
+    @constructor - new instance to upload json data to Algolia server.
+   */
+
   constructor() {
     this.pushData();
   }

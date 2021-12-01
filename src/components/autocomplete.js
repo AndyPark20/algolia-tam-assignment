@@ -12,7 +12,7 @@ import autocompleteProductTemplate from '../templates/autocomplete-product';
  * @description Instant Search class to display content in the page's autocomplete
  */
 class Autocomplete {
-  /**
+  /** *****
    * @constructor
    */
   constructor() {
@@ -28,12 +28,12 @@ class Autocomplete {
    */
   _registerClient() {
     this._searchClient = algoliasearch(
-      'VYLEWMPKEZ',
-      '8940a18fde155adf3f74b0912c267aa4'
+      'EZRFFAAMJ2',
+      'e4a746809c0c9401c32a527141fd3d79'
     );
 
     this._searchInstance = instantsearch({
-      indexName: 'ecommerce-v2',
+      indexName: 'client_Spence_Williams',
       searchClient: this._searchClient,
     });
   }
