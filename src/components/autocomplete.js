@@ -7,6 +7,8 @@ import { hits, searchBox, configure } from 'instantsearch.js/es/widgets';
 // Autocomplete Template
 import autocompleteProductTemplate from '../templates/autocomplete-product';
 
+import QuerySuggestion from './querysuggestions';
+
 /**
  * @class Autocomplete
  * @description Instant Search class to display content in the page's autocomplete
@@ -19,6 +21,7 @@ class Autocomplete {
     this._registerClient();
     this._registerWidgets();
     this._startSearch();
+    // this._startQuery();
   }
 
   /**
