@@ -1,11 +1,13 @@
 import Autocomplete from './components/autocomplete';
 import PushData from './components/pushdata';
+import QuerySuggestion from './components/querysuggestions';
 
 class SpencerAndWilliamsSearch {
   constructor() {
     this._initSearch();
     this._registerEvents();
     this._pushData();
+    this._querySuggestion();
   }
 
   _initSearch() {
@@ -14,6 +16,10 @@ class SpencerAndWilliamsSearch {
 
   _pushData() {
     this.PushDataToAlgolia = new PushData();
+  }
+
+  _querySuggestion() {
+    this.QuerySuggestion = new QuerySuggestion();
   }
 
   _registerEvents() {

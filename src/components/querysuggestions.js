@@ -14,10 +14,13 @@ class QuerySuggestion {
     const querySuggestionsPlugin = createQuerySuggestionsPlugin({
       searchClient,
       indexName: 'client_Spence_Williams_query_suggestions',
+      getSearchParams({ state }) {
+        return { hitsPerPage: state.query };
+      },
     });
 
     autocomplete({
-      container: '#autocomplete',
+      container: '#autocomplete-query',
       plugins: [querySuggestionsPlugin],
       openOnFocus: true,
     });
