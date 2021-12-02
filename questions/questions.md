@@ -73,8 +73,10 @@ Thank you very much for the email!
 I’m so sorry that you are experiencing this trouble!
 From what I see it looks like the built-in function searchkit can’t be found anywhere in your components. As a result, throwing uncaught reference Error.
 Can you try importing the searchkit function from algolia directory?
+
 For example:
 Import {searchkit} from ‘algoliasearch’
+
 I am available for a zoom call so that I can walk you thru the process as well.
 Let me know if you are available today or anytime this week.
 Thanks!
