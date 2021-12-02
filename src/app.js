@@ -30,7 +30,4 @@ class SpencerAndWilliamsSearch {
   }
 }
 
-// const test = new SpencerAndWilliamsSearch();
-// console.log(test._pushData());
-
 const app = new SpencerAndWilliamsSearch();

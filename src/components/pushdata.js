@@ -17,8 +17,7 @@ class PushData {
       'e4a746809c0c9401c32a527141fd3d79'
     );
     const index = client.initIndex('client_Spence_Williams');
-    index.addObjects(data);
+    index.saveObjects(data);
   }
 }
-
 export default PushData;
