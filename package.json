@@ -25,5 +25,8 @@
     "algoliasearch": "^4.11.0",
     "dotenv": "^10.0.0",
     "instantsearch.js": "^4.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.0.7"
   }
 }
